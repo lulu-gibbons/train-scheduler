@@ -1,0 +1,114 @@
+/* ====GOOGLE FONTS========================
+font-family: 'Questrial', sans-serif;
+font-family: 'Allerta Stencil', sans-serif;
+font-family: 'Bungee Shade', cursive;
+==========================================*/
+
+body {
+  background-image:
+    /* top, transparent red */
+    linear-gradient(rgba(0, 217, 255, 0.45),
+    rgba(0, 217, 255, 0.45)),
+    /* your image */
+    url('../images/madrid_subway.png');
+  min-height: 100vh;
+}
+
+.header {
+  background-color: rgb(231, 232, 230);
+  padding: 25px 0px 25px 0px;
+  border-bottom: .5rem solid rgb(197, 198, 196) !important;
+  padding-top: 25px;
+}
+
+.container {
+  background-color: rgb(197, 198, 196);
+  border: 2px solid rgb(130, 129, 129);
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.row {
+  padding: 45px 0px 15px 0px;
+}
+
+#title {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 52px;
+  padding-bottom: 25px;
+  padding-top: 15px;
+}
+
+.sub-title {
+  font-family: 'Questrial', sans-serif !important;
+  font-style: italic;
+  font-size: 38px;
+  text-align: center;
+}
+
+#train-title {
+  font-family: 'Questrial', sans-serif;
+  font-size: 42px;
+  padding-bottom: 10px;
+}
+
+#add-title {
+  font-family: 'Questrial', sans-serif !important;
+  font-size: 32px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgb(231, 232, 230);
+
+}
+
+.train-form {
+  border: 2px solid rgb(231, 232, 230);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+label {
+  font-family: 'Questrial', sans-serif !important;
+  font-size: 20px !important;
+}
+
+.schedule-title {
+  font-family: 'Questrial', sans-serif !important;
+  font-size: 22px;
+}
+
+.form-control {
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+input::placeholder {
+  color: rgb(197, 198, 196) !important;
+  font-style: italic;
+}
+
+#train-table-rows {
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 16px;
+}
+
+.military-time {
+  font-style: italic;
+  color: rgb(74, 74, 74) !important;
+}
+
+.btn {
+  font-size: 20px;
+}
+
+footer {
+  background-color: rgb(231, 232, 230);
+  border-top: .5rem solid rgb(197, 198, 196) !important;
+  margin-top: 25px;
+}
+
+.footer-copyright {
+  color: #000;
+  font-size: 11px;
+}

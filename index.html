@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Train Scheduler</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Bungee+Shade|Questrial" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="top-container">
+    <div class="header">
+      <h1 class="text-center" id="title">Metro de Madrid</h1>
+      <h2 class="text-center sub-title">Llega Aquí Cuando Llega</h2>
+      <p class="pull-right" id="currentTime"></p>
+    </div>
+    <!-- Add a train -->
+    <section class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+
+              <div>
+
+                <div class="panel-body train-form">
+                  <h3 id="add-title">Add New Train</h3>
+                  <form>
+                    <div class="form-group">
+                      <label>Train Name</label>
+                      <input type="text" class="form-control" id="train-name" placeholder="e.g. Train 567">
+                    </div>
+                    <div class="form-group">
+                      <label>Destination</label>
+                      <input type="text" class="form-control" id="destination" placeholder="e.g. Seattle, WA">
+                    </div>
+                    <div class="form-group">
+                      <label>First Train Time <span class="military-time">HH:mm-Military Time</span> :</label>
+                      <input type="text" class="form-control" id="first-train" placeholder="e.g. 18:00">
+                    </div>
+                    <div class="form-group">
+                      <label>Frequency <span class="military-time">In Minutes</span> :</label>
+                      <input type="text" class="form-control" id="frequency" placeholder="e.g. 30">
+                    </div>
+                    <button type="submit" class="btn btn-outline-dark center-block" id="submit">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Train Schedule -->
+        <div class="col-xs-12 col-sm-9">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 id="train-title">Train Schedule</h3>
+            </div>
+            <div class="panel-body">
+              <table class="table table-hover" id="train-table">
+                <thead>
+                  <tr>
+                    <th class="schedule-title">Train Name</th>
+                    <th class="schedule-title">Destination</th>
+                    <th class="schedule-title">Frequency</th>
+                    <th class="schedule-title">Next Arrival</th>
+                    <th class="schedule-title">Minutes Away</th>
+                  </tr>
+                </thead>
+                <tbody id="train-table-rows">
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <footer class="page-footer font-small fixed-bottom">
+
+    <div class="footer-copyright text-center py-3">
+      <script type="text/javascript">
+        var date = new Date(),
+          year = date.getFullYear(),
+          text = "Copyright &copy;" + year + " - Lacey Gibbons",
+          html = '<div class="text-align-center">' + text + '</div>';
+        document.write(html);
+      </script>
+    </div>
+  </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+      <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
